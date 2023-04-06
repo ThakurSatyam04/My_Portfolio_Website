@@ -44,11 +44,11 @@ nav li:hover{
 .hero{
     /* position: sticky; */
     /* top: 8%; */
+    height: 100vh;
     display: flex;
     flex-direction: column;
     /* justify-content: center; */
     align-items: center;
-    height: 760px;
     width: 100%;
     background-color: rgb(216, 234, 236);
     padding-top: 10vh;
