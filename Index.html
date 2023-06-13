@@ -15,61 +15,277 @@
   </head>
   <body>
     <div class="wrapper">
-      <!-- <div class="navbar">
-        <nav>
-          <ul>
-            <li><a href="#"></a> Home</li>
-            <li><a href="#"></a> About</li>
-            <li><a href="#contact"></a> Contact</li>
-          </ul>
-        </nav>
-      </div> -->
-      <div class="hero">
-        <div class="section1">
-          <img class = "profile_pic" src="/Images/My_pic.jpg" alt="Satyam Thakur" />
-          <p class="name">Satyam Kumar</p>
-        </div>
-        <div class="section2">
-          <div class="para">
+      <header class="header">
+        <nav  id="home" class="navbar">
+          <img src="./logos/favicon.jpg" alt="">
+            <ul class="nav-menu">
+              <li class="nav-item nav-link" ><a href="#home">Home</a></li>
+              <li class="nav-item nav-link" ><a href="#about">About</a> </li>
+              <li class="nav-item nav-link" ><a href="#contact"> Contact</a></li>
+            </ul>
+            <div class="hamburger">
+              <span class="bar"></span>
+              <span class="bar"></span>
+              <span class="bar"></span>
+            </div>
+          </nav>
+      </header>
+      <div  class="hero">
+        <div class="hero-left">
+
+          <div class="section1">
+            <img class = "profile_pic" src="/Images/My_pic.jpg" alt="Satyam Thakur" />
+            <p class="name">Satyam Kumar</p>
+          </div>
+          <div class="section2">
+            <div class="para">
+            </div>
             <p>Welcome to My Portfolio WebSite</p>
-          </div>
-          <div class="middle_text">I am a <span class="role"></span></div>
-          <div class="description">
-            Welcome to my Portfolio profile...
-            
+            <div class="middle_text">I am a <span class="role"></span></div>
+            <div class="description">
+              Welcome to my Portfolio profile...    
+            </div>
           </div>
         </div>
+        <!-- <div class="hero-right">
+          <img src="/Images/lap_img.jpeg" alt="">
+        </div> -->
       </div>
 
-      <div class="bg bg_img">
+      <!-- <div class="bg bg_img">
+      </div> -->
 
+      <div id="about" class="my_self_title">
+        <h2>About Me</h2>
+      </div>
+
+      <div  class="about">
+        <div class="about_img">
+          <img class = "profile_pic" src="/Images/passport size photo.jpg" alt="">
+        </div>
+        <div class="about-cont">
+          <div >
+            <p>As a college student in Information Science and
+              Engineering, I am always excited to apply my skills
+              and knowledge to a web development role. I have
+              experience in HTML, CSS, JavaScript, and React, as
+              well as a strong foundation in programming
+              concepts. I am looking for a role that will challenge
+              me to grow as a web developer and contribute to an
+              organization's success.</p>
+          </div>
+          <div id="experience" class="experience">
+            <h2>Experience</h2>
+            <div>
+              <ul>
+                <li>
+                  Working as a tech team in my college top clubs.
+                </li>
+                <li>
+                  Developed and maintained the college club's
+                website using HTML, CSS, and JavaScript, which
+                resulted in increased visibility and participation
+                among students and faculty members.
+                </li>
+                <li>
+                  Have experience of conducting an All over India
+                  hackathon.
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
       </div>
 
       <div class="my_self_title">
         <h2>Education</h2>
       </div>
       <div class="my_self_details">
-        <div class="info">
-          <h2>
-            COLLEGE: Nitte Meenakshi Institute of Technology,Bangalore,karnataka
-          </h2>
-          <pre>
-          Course: Information Science and Engineering
-          Passing Year: 2025
-          CGPA: 9.05
-        </pre
-          >
-          <h2>12th: SARVODAYA SENIOR SECONDARY SCHOOL,KOTA,RAJASTHAN</h2>
-          <pre>
-          Passing Year:2020
-          Board: CBSE
-        </pre
-          >
+        <div class="details_self">
+            <h2>
+              <p>COLLEGE: Nitte Meenakshi Institute of Technology,Bangalore,karnataka</p> 
+            </h2>
+            <pre>
+            Course: Information Science and Engineering
+            Passing Year: 2025
+            CGPA: 9.05
+            </pre>
+            <h2>
+              12th: SARVODAYA SENIOR SECONDARY SCHOOL,KOTA,RAJASTHAN
+            </h2>
+            <pre>
+            Passing Year:2020
+            Board: CBSE
+            </pre>
         </div>
       </div>
 
+      <div class="my_self_title">
+        <h2>Skills</h2>
+      </div>
+
+      <div class="skills">
+        <div class="soft-skills">
+          <h2>Soft Skills</h2>
+          <ul>
+            <li>
+              Team management
+            </li>
+            <li>
+              Decision making
+            </li>
+            <li>
+              Communication
+            </li>
+            <li>
+              Multi-tasking
+            </li>
+          </ul>
+        </div>
+        <div class="hard-skills">
+          <h2>Hard Skills</h2>
+          <div>
+            <ul>
+              <li>
+                <span>Web :</span>  HTML, CSS, JavaScript,
+                Tailwind, React.js
+              </li>
+              <li>
+                <span>Language : </span>  C, C++, Python
+              </li>
+              <li>
+                Data Structure and Algoritm
+              </li>
+            </ul>
+          </div>
+        </div>
+        
+
+      </div>
+
+      <div class="my_self_title">
+        <h2>Projects</h2>
+      </div>
+      <div class="proj_head">
+        Some of my main projects
+      </div>
+      <div class="projects">
+
+        <!-- card html starts -->
+        <section class="articles">
+          <article>
+            <div class="article-wrapper">
+              <figure>
+                <img src="/Images/News-app.png" alt="" />
+              </figure>
+              <div class="article-body">
+                <div class="proj-title">
+                  <h2>News App (React.js, bootstrap)</h2>
+
+                </div>
+                <div class="proj-details">
+                  <p>
+                    Designed a platform where a user can view current
+                    news. It contains all the fresh news and gets
+                    updated all the times. Runs on live server API.
+                  </p>
+                </div>
+                <a href="#" class="read-more">
+                  Demo <span class="sr-only">about this is some title</span>
+                  <svg xmlns="http://www.w3.org/2000/svg" class="icon-demo" viewBox="0 0 20 20" fill="currentColor">
+                    <path fill-rule="evenodd" d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd" />
+                  </svg>
+                </a>
+
+                <a href="#" class="read-more">
+                  Github <span class="sr-only">about this is some title</span>
+                  <svg xmlns="http://www.w3.org/2000/svg" class="icon-git" viewBox="0 0 20 20" fill="currentColor">
+                    <path fill-rule="evenodd" d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd" />
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </article>
+          <article>
+        
+            <div class="article-wrapper">
+              <figure>
+                <img src="/Images/wordpress.png" alt="" />
+              </figure>
+              <div class="article-body">
+                <div class="proj-title">
+                  <h2>Text Utils (React.js)</h2>
+
+                </div>
+                <div class="proj-details">
+                  <p>
+                    This site performs all the operations that can be
+                    done on text like convert to uppercase, lowercase,
+                    copy and many more.
+                    User can switch to dark mode as well.
+                  </p>
+
+                </div>
+                <a href="#" class="read-demo">
+                  Demo <span class="sr-only">about this is some title</span>
+                  <svg xmlns="http://www.w3.org/2000/svg" class="icon-demo" viewBox="0 0 20 20" fill="currentColor">
+                    <path fill-rule="evenodd" d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd" />
+                  </svg>
+                </a>
+
+                <a href="#" class="read-git">
+                  Github <span class="sr-only">about this is some title</span>
+                  <svg xmlns="http://www.w3.org/2000/svg" class="icon-git" viewBox="0 0 20 20" fill="currentColor">
+                    <path fill-rule="evenodd" d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd" />
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </article>
+          <article>
+        
+            <div class="article-wrapper">
+              <figure>
+                <img src="/Images/password-genr.png" alt="" />
+              </figure>
+              <div class="article-body">
+                <div class="proj-title">
+                  <h2>
+                    Password Generator (JavaScript)
+                  </h2>
+
+                </div>
+                <div class="proj-details">
+                  <p>
+                    This site generates random password of specified
+                    length. It also indicates whether the password is
+                    strong or weak.
+  
+                  </p>
+
+                </div>
+                <a href="#" class="read-more">
+                  Demo <span class="sr-only">about this is some title</span>
+                  <svg xmlns="http://www.w3.org/2000/svg" class="icon-demo" viewBox="0 0 20 20" fill="currentColor">
+                    <path fill-rule="evenodd" d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd" />
+                  </svg>
+                </a>
+
+                <a href="#" class="read-more">
+                  Github <span class="sr-only">about this is some title</span>
+                  <svg xmlns="http://www.w3.org/2000/svg" class="icon-git" viewBox="0 0 20 20" fill="currentColor">
+                    <path fill-rule="evenodd" d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd" />
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </article>
+        </section>
+        <!-- card html ends -->
+      </div>
+
       <!-- If you want in slideview -->
-      <div class="certificate_title">
+      <div id="certificate" class="certificate_title">
         <h2>Certificates</h2>
       </div>
 
@@ -95,12 +311,14 @@
         </div>
       </div>
 
-      <footer>
+      <footer >
         <div class="logos" id="contact">
-          <a href="https://www.facebook.com/satyamkumar.satyam04/" target="_blank"><img src="/logos/fb logo.jpg" alt="" /></a>
-          <a href="https://www.instagram.com/__.satyam7424.__/" target="_blank"><img src="/logos/insta logo.jpg" alt=""></a>
           <a href="https://github.com/ThakurSatyam04" target="_blank"><img src="/logos/GitHub-logo.jpg" alt=""></a>
           <a href="https://www.linkedin.com/in/satyam-thakur-91a238224/?originalSubdomain=in" target="_blank"><img src="/logos/LinkedIn logo.jpg" alt=""></a>
+          <a href="https://www.facebook.com/satyamkumar.satyam04/" target="_blank"><img src="/logos/fb logo.jpg" alt="" /></a>
+          <a href="https://www.instagram.com/__.satyam7424.__/" target="_blank"><img src="/logos/insta logo.jpg" alt=""></a>
+          
+          
         </div>
 
         <!-- <h2>Satyam Kumar</h2> -->
@@ -108,14 +326,14 @@
           <div class="text">
             <h2 style="margin: 6px 0px; text-decoration: underline;">Welcome:</h2>
             <p style="font-size: 1.4rem; letter-spacing: 0.2px; margin-top: 10px;"> Thanks for vising my portfolio website.... </p>
-          </div>
+          </div><hr class="hr">
           <div class="goto">
             <h2 style="margin: 6px 0px;text-decoration: underline;">Go To</h2>
-            <a href="#"><p style="font-size:1.2rem;padding: 10px 0px;">My page</p></a>
-            <a href="#"><p style="font-size:1.2rem;padding: 10px 0px;">About</p></a>
-            <a href="#"><p style="font-size:1.2rem;padding: 10px 0px;">Certificates</p></a>
-            <a href="#"><p style="font-size:1.2rem;padding: 10px 0px;">Experience</p></a>
-          </div>
+            <a href="#home"><p style="font-size:1.2rem;padding: 10px 0px;">My page</p></a>
+            <a href="#about"><p style="font-size:1.2rem;padding: 10px 0px;">About</p></a>
+            <a href="#certificate"><p style="font-size:1.2rem;padding: 10px 0px;">Certificates</p></a>
+            <a href="#experience"><p style="font-size:1.2rem;padding: 10px 0px;">Experience</p></a>
+          </div><hr class="hr">
       
           <div class="contact_details">
             <h2 style="margin: 6px 0px;text-decoration: underline;">Contact me</h2> 
@@ -123,12 +341,12 @@
             Phone: <a href="tel: 7062333620">7062333620</a>
             </div>
             <div class="mail" style="font-size: 1.2rem; ">
-            Mail: <a href="mailto: kumarsatyam04.2000@gmail.com">kumarsatyma04.2000@gmail.com</a>
+            Mail id: <a href="mailto: kumarsatyam04.2000@gmail.com">kumarsatyma04.2000@gmail.com</a>
           </div>
           <div class="address" style="font-size: 1.2rem; padding: 10px 0px;">
             Address: Yelahanka, Bangalore
           </div>
-          </div>
+          </div><hr class="hr">
           
         </div>
         <div class="copyright">
